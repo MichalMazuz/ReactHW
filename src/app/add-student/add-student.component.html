@@ -1,0 +1,35 @@
+<div class="card" *ngIf="student">
+    <div class="card-body">
+       Add Student :
+      <div>Fname:<input type="text"></div>
+      <div>Lname:<input type="text"></div>
+      <div>address:<input type="text"></div>
+      <div>phone:<input type="text"></div>
+      <div>avg:<input type="text"></div>
+      <div>status:<input type="text"></div>
+      <div>date:<input type="text"></div>
+    </div>
+</div>
+<form *ngIf="student">
+    <div class="mb-3">
+      <label for="exampleInputFname" class="form-label">Fname</label>
+      <input type="text" class="form-control" id="exampleInputFname" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputLname" class="form-label">Lname</label>
+      <input type="text" class="form-control" id="exampleInputLname">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputaddress" class="form-label">address</label>
+        <input type="text" class="form-control" id="exampleInputaddress" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputLname" class="form-label">Lname</label>
+        <input type="text" class="form-control" id="exampleInputLname">
+      </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

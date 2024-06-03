@@ -1,0 +1,15 @@
+<p>students-list works!</p>
+<ul class="list-group">
+    <li *ngFor="let student of students" class="list-group-item">
+        <div class="row">
+             <div class="col-3"> {{student.firstN}} {{student.lastN}}:  {{student.avg}}</div>
+             <div class="col-2" (click)="deleteStudent(student.id)"><button>dalete student</button></div>
+             <div class="col-2" (click)="updateStudent(student)"><button>update student</button></div>
+        </div>
+       
+    </li>
+</ul>
+<app-student-details [student]="selectesdStudent"></app-student-details>
+<div><button (click)="addStudent()">add student</button></div>
+<app-add-student [student]="selectesdStudent"></app-add-student>
+

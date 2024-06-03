@@ -1,0 +1,19 @@
+
+<div class="card" *ngIf="student && student.status==true">
+
+    <div class="card-body">
+        Student Details:
+        {{student.id}}
+        {{student.firstN}}  {{student.lastN}}
+        {{student.address}}
+        {{student.phone}}
+        {{student.avg}}
+        {{student.status}}
+    </div>
+</div>
+<div class="card" *ngIf="student && student.status==false">
+    <div class="card-body">
+        the date you left:
+        {{student.dateL}}
+    </div>
+</div>

@@ -1,0 +1,19 @@
+.register{
+    border:0.4em solid rgb(82, 47, 255);
+    margin:auto;
+    width:50%;
+    text-align: center;
+}
+.my_gym{
+    border:0.3em solid greenyellow;
+    margin:auto;
+    width:40%;
+    text-align: center;
+}
+.body{
+    text-align: center;
+}
+.sub{
+    font-size: x-large;
+    border: 0.8em solid rgb(0, 170, 255) ;
+}
